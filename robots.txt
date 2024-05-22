@@ -1,4 +1,0 @@
-user-agent: *
-disallow: /cgi-bin/
-disallow: /image/
-disallow: /pages/index.html, case.html, hvem-er-vi.html, index.html, kontakt.html, ydelsepakker.html
