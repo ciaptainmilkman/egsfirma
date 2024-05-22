@@ -1,0 +1,1209 @@
+/*----------------------
+-------GENERELT---------
+----------------------*/
+*{
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width:320px;
+}
+
+.indhold{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8% 15% 10%;
+    gap:160px;
+}
+
+.hoved-overskrift {
+   border-bottom:1px solid #D9D9D9;
+   padding-bottom:20px;
+}
+
+/*----------------------
+---GENEREL TYPOGRAFI----
+----------------------*/
+
+.hoved-overskrift h1 {
+    font-size: 50px;
+}
+
+p {
+    font-family:"Open Sans", sans-serif;
+    font-size:16px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family:"Italiana", sans-serif;
+}
+
+#input-form p, #input-form h2 {
+    font-family:"Open Sans", sans-serif;
+}
+
+.content p {
+    font-size:20px;
+    font-weight: bold;
+    font-family:"Open Sans", sans-serif;
+} 
+
+.nav-img-p p {
+    font-size: 20px;
+}
+
+/*----------------------
+-------NAVIGATION-------
+----------------------*/
+
+.navbar{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+
+.nav-img-p {
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+.nav-img-p a img {
+    height:auto;
+
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.menulinks {
+    display: flex;
+    gap:80px;
+    margin-left:10%;
+}
+
+.nav-tlf {
+    font-weight: 700;
+}
+
+.burger-menu{
+    display: none;
+}
+
+/* Hide the checkbox by default */
+
+.number {
+    gap:15px;
+}
+
+.number img {
+    display: flex;
+    align-items: center;
+}
+
+.menulinks a.active {
+    position: relative;
+    font-weight: bold;
+}
+
+.menulinks a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1mm;
+    background-color: currentColor;
+    position: absolute;
+    bottom: -10px;
+}
+
+/*----------------------
+-------FOOTER-----------
+----------------------*/
+footer {
+    background-color: #486732;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 8%;
+    align-items: center;
+}
+
+.infohvem {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    align-self: flex-start;
+}
+.infohvem-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.infohvem p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.infohvem li{
+    list-style: none;
+    display: inline-block;
+    font-family:"Open Sans", sans-serif;
+}
+
+.infohvem li a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.menulinks-nav {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.noci img{
+    width: 60px;
+    height:auto;
+}
+
+.noci {
+    display: flex;
+    height:60px;
+    gap:50px;
+    padding:auto 0;
+    margin-right:10%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+/*---------------------------
+-------Subscription Box------
+-----------------------------*/
+
+.input-title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 20% 10%;
+    background-color: #F1F1F1;
+    gap:20px;
+}
+
+.input-name {
+    display: flex;
+    flex-direction: column;
+    width:calc(50% - 47px);
+    gap:8px;
+}
+
+.input-other {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.label-inline {
+    flex-direction: row;
+    gap:70px;
+}
+
+.send-field {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: flex-end
+}
+
+input[type='text'] {
+    width: 100%;
+}
+
+.input-group input[type="email"] {
+    max-width: 100%;
+}
+
+.input-group textarea {
+    height: 100px;
+    max-width:100%;
+    resize: none;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+.clear-button {
+    padding: 8px 34px;
+    font-size: 20px;
+    background-color: #F2CA7E;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width:120px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*----------------------
+-------FORSIDE----------
+----------------------*/
+
+.extra-margin {
+    margin-bottom:60px;
+}
+
+.info-box {
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 8% 8% 10%;  /* andre cases/pakker som denne */
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.forside-pakker {
+    background-color: white;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+    position: absolute;
+    text-align: flex-start;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+}
+
+.banner-text p {
+    font-size: 2vw; /* Responsive font size */
+    font-weight: 700;
+}
+
+.kundeliste {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    background-color: #F1F1F1;
+    padding:8% 15% 10%;
+    box-sizing: border-box;
+}
+
+.kundetext h1 {
+    font-family:"Italiana", sans-serif;
+    font-size: 35px;
+}
+
+.firmalogoer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px;
+}
+
+.firmalogoer img {
+    height:60px;
+    width:auto;
+}
+
+.video-boks{
+    width: 100%;
+}
+
+.video-boks video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.kunder{
+    width: 100%;
+}
+
+.portraitboks{
+    display: flex;
+    gap:60px;
+    align-items: center;
+}
+
+.portrait-picture {
+    height:auto;
+    width: 307px;
+}
+
+.esg-picture {
+    width:40%;
+}
+
+.esgboks {
+    display:flex;
+    gap:40px;
+    align-items: center;
+}
+
+.tekst1 {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.tekst1 h1{
+    font-size: 35px;
+}
+
+.portrait-text {
+    margin-right: 6%;
+}
+
+.point-list {
+    padding-left: 20px;
+    width:100%;
+    max-width:100%;
+}
+
+.point-list li {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+/*----------------------
+-------KONTAKT----------
+----------------------*/
+
+.kontakt-tekst p{
+    font-size:20px;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.kontaktbox {
+    display:flex;
+    gap:80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-indhold {
+    display:flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+/*----------------------
+-------HVEM ER VI-------
+----------------------*/
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.mindrefont h1 {
+    font-size: 35px;
+}
+.smolbillede1{
+    width:30vw;
+}
+.smolbillede {
+   display: none;
+}
+
+.hvemerjeg {
+    display:flex;
+    gap:40px;
+    align-items: center;
+}
+
+.sporgsmaalbokse{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family:"Italiana", sans-serif;
+    font-size: 50px;
+}
+
+.Typisk{
+    font-size: 50px;
+}
+
+.sprogsmaalwrapper {
+    display: flex;
+    justify-content: center;
+    gap:60px;
+    padding: 25px;
+}
+
+.sporgsmaalbokse1, .sporgsmaalbokse2, .sporgsmaalbokse3, .sporgsmaalbokse4 {
+    perspective: 1000px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 2%;
+    padding: 5%;
+    width: 200px;  /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family:"Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.front {
+    transform: rotateY(0deg);
+    font-weight: 700;
+}
+
+.back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sporgsmaalbokse1:hover .front, .sporgsmaalbokse2:hover .front, .sporgsmaalbokse3:hover .front, .sporgsmaalbokse4:hover .front {
+    transform: rotateY(180deg);
+}
+
+.sporgsmaalbokse1:hover .back, .sporgsmaalbokse2:hover .back, .sporgsmaalbokse3:hover .back, .sporgsmaalbokse4:hover .back {
+    transform: rotateY(0deg);
+}
+
+.sporgsmaalbokse1 .front, .sporgsmaalbokse3 .front {
+    background-color: #9FCBF4;
+}
+
+.sporgsmaalbokse2 .front, .sporgsmaalbokse4 .front {
+    background-color: #F2CA7E;
+}
+
+.sporgsmaalbokse1 .back, .sporgsmaalbokse3 .back {
+    background-color: #9FCBF4;
+}
+
+.sporgsmaalbokse2 .back, .sporgsmaalbokse4 .back {
+    background-color: #F2CA7E;
+}
+
+/*----------------------
+-------YDELSES PAKKE----
+----------------------*/
+
+.pakke-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pakke-reverse {
+    flex-direction: row-reverse;
+}
+
+.venstre-pakke {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+.højre-pakke {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+.pakke-box-tekst {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 40%;
+}
+
+.ekstra-margin {
+    margin-bottom: 10px;
+}
+
+.pakketekst {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pakketekst li {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.pakke-skabelon-text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:100px;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.squarewrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px; /* Adjust gap as needed */
+}
+
+.square {
+    background-color: #9FCBF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(25% - 50px); /* Adjust width for 4 boxes per row */
+    padding: 15px 20px;
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+.square img {
+    max-width: 80px; /* Adjust based on your design */
+    margin-top: 20px;
+}
+
+.square-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+}
+
+.bigger-font {
+    font-size: 20px;
+}
+
+/*----------------------
+-------VORES CASES------
+----------------------*/
+
+.cases-indhold {
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+.content {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    gap:60px;
+    justify-content:space-around;
+}
+
+.content_udvalg {
+    flex-direction:row;
+}
+
+.big-case-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ensure it uses the full width */
+    max-width: 350px;
+    flex: 1 1 33.33%; /* Adjust this to make all boxes equal width and height */
+    box-sizing: border-box;
+}
+
+.big-case_picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.big-case_picture img {
+    width: 100%; 
+    height: auto; 
+}
+
+.cases-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the button is pushed to the bottom */
+    padding: 0px 18px;
+    border-left: 2px solid #AFAFAF;
+    gap: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.box_overskrift {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    flex-grow: 1; 
+    margin-bottom: 10px; 
+}
+
+.læsmere_knap {
+    padding: 8px 20px;
+    background-color:#F2CA7E;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size:16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    width:80px;
+}
+
+
+/*----------------------
+-----SPECIFIK CASE------
+----------------------*/
+
+.undertitel {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.artikeltext {
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    flex: 1;
+}
+
+.artikelboks {
+    display: flex;
+    gap:50px;
+    align-items: flex-start;
+}
+
+.icony {
+    display: flex; 
+    gap:25px;
+}
+
+.icony img {
+    height:50px;
+}
+
+.icony p {
+    font-size: 18px;
+}
+
+.caseoversigt{
+    display: flex;
+    flex-direction: column;
+    background-color: #9FCBF4;
+    padding:35px 85px 35px 35px;
+    gap:20px;
+}
+
+.small-casebox {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+}
+
+.info-box h2{
+    margin: 10px 0;
+    margin-left: 40px;
+}
+
+.small-cases-container {
+    display: flex;
+    justify-content: flex-start;  
+    overflow-x: auto;  
+    flex-wrap: nowrap;
+    width: 100%;  
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+}
+
+.little-case-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.33%;   
+    scroll-snap-align: start;  
+    width: calc(30% - 30px); 
+    gap: 12px;
+    box-sizing: border-box;
+    padding-bottom: 18px;
+}
+
+.little-case-box img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*----------------------
+--STYLING AF SCROLLBAR--
+----------------------*/
+
+.small-cases-container::-webkit-scrollbar {
+    height: 8px;
+    background-color: #ddd; 
+}
+
+.small-cases-container::-webkit-scrollbar-thumb {
+    background-color: green;
+}
+
+.crying{
+    width: 100%;
+}
+
+.ov{
+    font-weight: bolder;
+    font-size: 50px
+}
+.ov2{
+    font-weight: bold;
+}
+
+.unskrift{
+    font-weight: bold;
+}
+
+.breadtexxt{
+    font-weight: 300; 
+    font-size: 20px;
+}
+
+.kontaktturtle{
+    font-size: 25.6px;
+    font-weight: 600;
+}
+
+/*----------------------
+-----MEDIA QUERIE-------
+----------------------*/
+
+@media screen and (max-width: 1100px) { 
+    .nav-tlf{
+        display: none;
+    }
+    .nav-img-p.number img {
+        display: none;
+    }
+    .menulinks a.active::after {
+        display: none;
+    }
+    .navbar {
+            width: 90%; 
+        }
+    .navbar li a{
+        font-size: 90%;
+    }
+    .square {
+        width: calc(50% - 50px); /* Adjust width for 2 boxes per row */
+    }
+
+    .pakke-box, .pakke-reverse {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .højre-pakke, .venstre-pakke {
+        margin:0;
+    }
+
+    .pakke-box-tekst {
+        max-width:100%;
+        padding:20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 843px) {
+    .small-cases-container {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+    }
+    .sprogsmaalwrapper{
+        width: 110%;
+        gap: 0;
+    }
+    .sporgsmaalbokse1{
+        width: 100%;
+    }
+    .sporgsmaalbokse2{
+        width: 100%;
+    }
+    .sporgsmaalbokse3{
+        width: 100%;
+    }
+    .sporgsmaalbokse4{
+        width: 100%;
+    }
+    footer {
+    padding: 2% 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.infohvem-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.noci{
+    width: 1%;
+}
+.infohvem{
+    padding-left: 5%;
+}
+
+    .carousel img{
+        width: calc(100% / 2);
+    }
+
+    .point-list{
+        font-size: 15px;
+    } 
+    .smollen{
+        font: 10px;
+    }
+    .squarewrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .square, .square2,.square3,.square4 {
+        width: calc(40% - 10px); 
+        margin-top: 20px; 
+      }
+      
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container h1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-container img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel img{
+        width: 100%;
+    }
+
+    .storebillede{
+        display: block;
+        width: 100%;
+    }
+
+    .storebilledwrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hvemerjeg{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .smolbillede1{
+       display: none;
+    }
+
+    .smolbillede{
+        display: block;
+    }
+
+    .sprogsmaalwrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 120%;
+    }
+ 
+
+    .little-case-box {
+        flex: 0 0 100%; 
+        width: 100%; 
+    }
+    .artikelboks {
+        flex-direction: column-reverse; 
+    }
+    .menulinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: white;
+    }
+
+    .menulinks.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-icon,
+    .close-icon {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        display: none;
+    }
+    .nav-tlf{
+        display: none;
+    }
+    .nav-img-p.number img {
+        display: none;
+    }
+    .menulinks a.active::after {
+        display: none;
+    }
+
+    .content{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .banner{
+    width: 118%;
+    }
+
+    .esgboks{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .portraitboks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kundeliste{
+        width: 118%;
+    }
+
+    footer {
+        padding: 2% 9%;
+        width: 100%;
+ 
+    }
+    form{
+        width: 78%;
+    }
+    .video-boks{
+        width: 130%;
+    }
+    video{
+        width: 130%;
+    }
+}
+@media screen and (max-width: 500px){
+.infohvem{
+    padding-left: 2%;
+}
+footer {
+    padding: 2% 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.infohvem-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.noci{
+    width: 1%;
+}
+.sporgsmaalbokse1{
+    width: auto;
+}
+.sporgsmaalbokse2{
+    width: auto;
+}
+.sporgsmaalbokse3{
+    width: auto;
+}
+.sporgsmaalbokse4{
+    width: auto;
+}
+.front{
+    font-size: smaller;
+}
+.back{
+    font-size: smaller;
+}
+.banner{
+    width: 116%;
+}
+.kundeliste{
+    width: 116%;
+}
+form{
+    width: 76%;
+}
+.square, .square2, .square3, .square4 {
+    width: calc(51% - 10px); /* Adjust width for 2 boxes per row */
+    margin-top: 20px; /* Adjust top margin */
+}
+
+.squarewrapper {
+    width: 100%; /* Ensure the wrapper takes full width */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Add gap between squares */
+}
+.kontaktbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 280px){
+    .caseoversigt{
+        width: 90%;
+    }
+    .banner{
+        width: 126%;
+    }
+    .kundeliste{
+        width: 126%;
+    }
+    form{
+        width: 83%;
+    }
+    
+    .kontaktbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer {
+        padding: 6% 13%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .square, .square2, .square3, .square4 {
+        width: calc(50% - 10px); /* Adjust width for 2 boxes per row */
+        margin-top: 20px; /* Adjust top margin */
+    }
+    .squarewrapper{
+        width: 150%;
+    }
+
+}    
