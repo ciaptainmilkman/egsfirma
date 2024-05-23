@@ -9,33 +9,38 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" 
-        rel="stylesheet"type="text/css">
+        rel="stylesheet" type="text/css">
         <title>Document</title>
     </head>
 <body>
     <nav>
-        <div class="navbar">
-            <div class="nav-img-p">
-                <a href="index.html"> <img src="img/turtle.png" alt="logo"></a>
-                <p class="logo-name">TURTLE HUB</p>
+            <div class="navbar">
+                <div class="nav-img-p">
+                    <a href="index.html"> <img src="img/turtle.png" alt="logo"></a>
+                    <p class="logo-name">TURTLE HUB</p>
+                </div>
+                <ul class="menulinks">
+                    <li><a href="ydelsepakker.html">YDELSESPAKKER</a></li>
+                    <li><a href="hvem-er-vi.html">HVEM ER VI?</a></li>
+                    <li><a href="kontakt.html"class="active">KONTAKT</a></li>
+                    <li><a href="vores-cases.html">CASES</a></li>
+                </ul>
+                <div class="nav-img-p number">
+                    <a href="#">
+                      <img src="img/Vector.png" alt="vector">
+                    </a>
+                    <ul>
+                      <li>
+                        <a class="nav-tlf" href="#">+45 0000 0000</a>
+                      </li>
+                    </ul>
+                  </div>
+                <div class="burger-menu">
+                    <div class="burger-icon">&#9776;</div>
+                    <div class="close-icon">&times;</div>
+                </div>
             </div>
-            <ul class="menulinks">
-                <li><a href="ydelsepakker.html">YDELSESPAKKER</a></li>
-                <li><a href="hvem-er-vi.html">HVEM ER VI?</a></li>
-                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
-                <li><a href="vores-cases.html">CASES</a></li>
-            </ul>
-            <div class="nav-img-p number">
-                <a> <img  src="img/Vector.png" alt="vector"></a>
-                <li><a class="nav-tlf">+45 0000 0000</a></li>
-            </div>
-            <div class="burger-menu">
-                <div class="burger-icon">&#9776;</div>
-                <div class="close-icon">&times;</div>
-            </div>
-        </div>
-    </nav>
-
+        </nav>
     <div class="indhold">
 
             <div class="hoved-overskrift extra-margin">
@@ -76,7 +81,7 @@
         </div>
         <div class="input-group input-other">
             <p>Besked</p>
-            <textarea id="message"style="max-width:100%;height: 150px;" required></textarea>
+            <textarea id="message" style="max-width:100%;height: 150px;" required></textarea>
         </div>
         <div class="send-field">
             <button class="clear-button" type="submit" onclick="ClearFields();">SEND</button>
@@ -115,4 +120,6 @@
 
 </body>
 </html>
+
+
 
